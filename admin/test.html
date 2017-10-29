@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+
+</head>
+<body>
+
+<script src="../static/assets/vendors/jquery/jquery.js"></script>
+  <!-- jq的cookie -->
+  <script src="../static/assets/vendors/js-cookie/jquery.cookie-1.4.1.min.js"></script>
+  <!-- js的cookie -->
+  <script src="../static/assets/vendors/js-cookie/js.cookie-2.1.4.min.js"></script>
+
+<script>
+
+  $(function ($) {
+
+    /*$op = $("option")
+
+    $("#btn").on("click",function () {
+
+    $("input").trigger("click")
+
+    })*/
+
+  $op = $("option")
+
+  $("#btn").click(function(){
+
+  $("#btn~input").trigger("click");
+
+  });
+
+  // 读取cookie
+  $ck = $.cookie('name')
+  console.log($ck);
+
+
+
+  })
+
+</script>
+
+
+
+  <input type="button" id="btn" value="按钮">
+
+  <!-- <select  multiple id="sel">
+    <option value="">选项1</option>
+    <option value="">选项2</option>
+    <option value="">选项3</option>
+    <option value="">选项4</option>
+  </select> -->
+
+<!--   <button id="btn">按钮</button>-->
+
+<input type="checkbox" name="">
+<input type="checkbox" name="">
+<input type="checkbox" name="">
+<input type="checkbox" name="">
+
+
+</body>
+</html>

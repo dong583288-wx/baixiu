@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>cookie</title>
+  <!-- 引入 -->
+  <script src="../static/assets/vendors/jquery/jquery.js"></script>
+  <!-- jq的cookie -->
+  <script src="../static/assets/vendors/js-cookie/jquery.cookie-1.4.1.min.js"></script>
+  <!-- js的cookie -->
+  <script src="../static/assets/vendors/js-cookie/js.cookie-2.1.4.min.js"></script>
+
+</head>
+<body>
+  <a href="#" id="a-del">点击生成cookie</a>
+
+<script>
+  $("#a-del").on('click', function  () {
+
+    Cookies.set('name', 'zhangsan', { expires: 7 });
+    var ck = Cookies.get('name')
+
+/*    $.cookie('name', 'value', { expires: 7, secure: false});
+
+    $ck = $.cookie('name')*/
+
+
+    console.log(ck)
+
+    console.log(1111);
+    return
+  })
+
+
+
+</script>
+
+
+
+</body>
+</html>
